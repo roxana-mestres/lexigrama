@@ -1,0 +1,166 @@
+body{
+    background-image: url(/img/fondo-textura.svg);
+    background-repeat: repeat;
+    background-size: 100%;
+}
+
+/*HEADER*/
+
+header{
+    background-color: #F9C000;
+}
+
+/*SECCIÓN PRINCIPAL*/
+.titulos h1, .titulos h2{
+    width: 100%;
+    margin: 50px 0; 
+    text-align: center; 
+}
+h1{
+    font-size: 4em;
+    padding-bottom: 20px;
+    background-image: url(/img/highlight-dos.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h2{
+    font-size: 3em; 
+}
+h2.nombre{
+    padding-left: 40px;
+}
+.texto{
+    
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 40px;
+}
+.texto.principal{
+    max-width: 80vw;
+}
+.flecha{
+    background-image: url(/img/flecha.svg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+}
+.div-paula{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+.flecha-foto-paula, .flecha-foto-rox{
+    min-width: 600px;
+}
+.flecha-foto-paula{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.flecha-foto-rox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50vh;
+}
+.flecha.paula{
+    transform: rotate(-45deg);
+}
+
+.div-rox{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+.flecha.rox{
+    transform: scaleX(-1);
+    rotate: 30deg;
+}
+/*RESPONSIVE*/
+@media screen and (min-width: 320px) and (max-width: 1324px) {
+    .div-paula, .div-rox{
+        display: block;
+    }
+    h1{
+        background-size: contain;
+    }
+    h1, h2{
+        text-align: center;
+    }
+    h2{
+        margin: 25px 0;
+    }
+    .titulos {
+        font-size: 0.8em;
+        margin: 0;
+        width: 100%;
+    }
+    .nombre-texto-paula, .nombre-texto-rox{
+        margin: 0 auto;
+    }
+    .texto{
+        width: 80vw;
+        font-size: 18px;
+        text-align: left;
+        padding: 0;
+    }
+    h1{
+        margin-top: 50px;
+        background-position: center;
+        background-size: 80vw;
+    }
+    h2.nombre{
+        padding: 0;
+    }
+    .flecha{
+        display: none;
+    }
+    .flecha-foto-paula, .flecha-foto-rox{
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        min-width: 100%;
+    }
+    .img-paula, .img-rox{
+        position: static;
+        max-width: 70vw;
+        margin-bottom: 50px;
+    }
+    .div-rox{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 960px) {
+    .linea{
+        display: none;
+}
+    .procesos{
+        display: block;
+        width: max-content;
+        text-align: center;
+}
+    .p-proceso, .numero-proceso, .titulo{
+        width: 300px;
+        margin: 20px 0;
+}
+    .p-proceso{
+        margin-bottom: 40px;
+}
+    h2.highlight{
+        background-image: url(/img/highlight-dos.svg);
+        background-repeat: repeat;
+        background-size: cover;
+        width: fit-content;
+}
+}

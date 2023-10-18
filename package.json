@@ -1,0 +1,16 @@
+{
+  "name": "mi-servidor",
+  "version": "1.0.0",
+  "description": "Descripción de mi servidor",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.17.1",
+    "mysql2": "^3.6.1",
+    "path": "^0.12.7"
+  }
+}

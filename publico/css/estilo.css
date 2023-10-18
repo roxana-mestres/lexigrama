@@ -1,0 +1,451 @@
+body {
+  background-image: url(/img/cartulina_amarilla_escritorio.svg),
+    url(/img/fondo-textura.svg);
+  background-repeat: no-repeat, repeat;
+  background-size: contain, 100%;
+  width: 100%;
+}
+a {
+  position: relative;
+  color: #454545;
+}
+
+/*ANIMACIÓN LINEA MENÚ*/
+.enlaces-menu::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+a:hover {
+  color: #000;
+}
+.enlaces-menu:hover::after {
+  width: 100%;
+}
+/*HERO*/
+section#hero {
+  height: calc(100vh - 60px);
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#hero h1 {
+  font-family: "Cutive Mono", monospace;
+  font-size: 5vw;
+  font-size: clamp(1em, 15vw, 9em);
+}
+#hero p {
+  font-family: "Cutive Mono", monospace;
+  font-size: 3em;
+  font-size: clamp(1em, 6vw, 4em);
+}
+button {
+  font-family: "Roboto Mono", monospace;
+}
+
+/*ANIMACIÓN TEXTO*/
+
+.contenedor_texto_dinamico {
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: clamp(1px, 7vw, 65px);
+  background-color: #454545;
+  margin-left: 0.1em;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% {
+    background-color: #454545;
+  }
+
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #454545;
+  }
+}
+
+/*RESPONSIVE*/
+
+@media screen and (min-width: 320px) and (max-width: 1324px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar .boton-toggle,
+  .menu-desplegable {
+    display: block;
+  }
+  .navbar .enlaces {
+    display: none;
+  }
+  a.navbar {
+    display: inline-block;
+    width: 100%;
+  }
+  .menu-desplegable {
+    width: auto;
+    max-width: 300px;
+  }
+  body {
+    background-image: url(/img/cartulina_amarilla_movil.svg),
+      url(/img/fondo-textura.svg);
+    background-size: 200vh, 100%;
+  }
+  main {
+    height: 75vh;
+  }
+}
+
+/*SECCIÓN UNO*/
+
+.ilustracion_escritorio.uno {
+  background-image: url(/img/ilustraciones_01.svg);
+  height: 50vh;
+}
+.ilustracion_movil.uno {
+  background-image: url(/img/ilustraciones_01_movil.svg);
+  height: 30vh;
+}
+div.ilustracion_escritorio,
+div.ilustracion_movil {
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h2.titulo {
+  font-size: 1.5em;
+  font-size: clamp(1.5em, 5vw, 7em);
+  text-align: center;
+  padding: 20px 60px;
+}
+#titulo-experiencia {
+  margin: 40px 0 40px 0;
+}
+.ilustracion_movil {
+  display: none;
+}
+.ilustracion_escritorio {
+  display: block;
+}
+.botones.movil {
+  display: none;
+}
+.subtitulo {
+  font-size: 4em;
+  text-transform: lowercase;
+  background-image: url(/img/highlight.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.subtitulo::first-letter {
+  text-transform: uppercase;
+}
+.numero {
+  font-size: 10em;
+  text-align: center;
+}
+div.textos {
+  display: flex;
+  justify-content: space-around;
+  max-width: 80vw;
+  margin: 100px auto;
+}
+div.textos.der {
+  flex-direction: row-reverse;
+}
+div.subtitulo-numero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+div.subtitulo-numero.der {
+  max-width: 25vw;
+}
+.bloque-texto,
+li,
+ol {
+  max-width: 40vw;
+  line-height: 35px;
+  font-size: 20px;
+  text-align: justify;
+}
+div.flecha-texto li {
+  list-style: circle;
+  margin-left: 50px;
+}
+div.flecha.imagen {
+  width: 200px;
+  height: 200px;
+  background-image: url(/img/flecha.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  left: -5vw;
+}
+div.flecha.imagen.der {
+  transform: scaleX(-1);
+  left: 30vw;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1324px) {
+  .ilustracion_movil {
+    display: block;
+  }
+  .ilustracion_escritorio {
+    display: none;
+  }
+  .botones.movil {
+    display: flex;
+    text-align: center;
+  }
+  .boton-amarillo.s1 {
+    margin: 30px 0;
+  }
+  .movil_escritorio {
+    display: inline-block;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .subtitulo {
+    background-position: center;
+    font-size: 3em;
+    background-size: 450px;
+  }
+  h2.titulo {
+    padding: 60px 20px;
+    font-size: 2.5em;
+  }
+  div.textos {
+    display: block;
+  }
+  div.flecha {
+    display: none;
+  }
+  .bloque-texto {
+    max-width: 80vw;
+    text-align: left;
+    font-size: 19px;
+  }
+  .subtitulo-numero {
+    text-align: center;
+  }
+  div.subtitulo-numero.der {
+    max-width: 80vw;
+  }
+  li,
+  ol {
+    text-align: left;
+    font-size: 19px;
+    max-width: 80vw;
+  }
+  #titulo-experiencia {
+    padding: 0px 50px;
+  }
+  div.contenedor_resenas {
+    margin-top: 0;
+  }
+  div.icono_testimonio {
+    margin: 0 10px;
+  }
+}
+/* SECCIÓN CUATRO */
+.botones {
+  margin: 40px 0;
+}
+div.botones {
+  text-align: center;
+}
+.ilustracion_escritorio.dos {
+  background-image: url(/img/ilustraciones_02.svg);
+  height: 40vh;
+}
+.ilustracion_movil.dos {
+  background-image: url(/img/ilustraciones_02_movil.svg);
+  height: 30vh;
+}
+.ilustracion_escritorio.exp {
+  background-image: url(/img/imagen_experiencia.png);
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+}
+.img-movil {
+  display: none;
+}
+.img-escritorio {
+  display: block;
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+/* RESEÑAS */
+
+.contenedor_resenas {
+  width: 100%;
+  height: 100vh;
+  margin: 40px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resenas {
+  width: auto;
+  height: auto;
+  padding: 50px 50px 50px;
+  border: 2px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0;
+}
+.resenas::after {
+  content: "";
+  background-color: #f9c000;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+.resenas:hover::after {
+  top: 0px;
+  left: 0px;
+}
+.texto_resenas {
+  width: auto;
+  height: auto;
+}
+.texto_usuario {
+  width: 50vw;
+  text-align: center;
+  line-height: 35px;
+  font-size: 23px;
+  display: none;
+}
+.nombre {
+  font-size: 35px;
+  display: block;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.profesion {
+  font-size: 23px;
+  display: block;
+  padding: 15px 0 25px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+div.comillas_resenas {
+  width: 70px;
+  height: 70px;
+  background-image: url(/img/comillas-img.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+div.icono_resena {
+  width: 50vw;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+div.icono_testimonio {
+  min-width: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div.icono_testimonio.uno {
+  background-image: url(/img/resena_01.svg);
+}
+div.icono_testimonio.dos {
+  background-image: url(/img/resena_02.svg);
+}
+div.icono_testimonio.tres {
+  background-image: url(/img/resena_03.svg);
+}
+div.icono_testimonio.cuatro {
+  background-image: url(/img/resena_04.svg);
+}
+.resena_activa {
+  display: block;
+}
+.imagen_resena_activa {
+  border: 3px solid #f9c000;
+}
+div.imagen_resena_activa {
+  min-width: 150px;
+  min-height: 150px;
+}
+/* SECCIÓN CUATRO RESPONSIVE */
+@media screen and (min-width: 320px) and (max-width: 1324px) {
+  .botones,
+  .botones.movil {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+  }
+  button {
+    max-width: 500px;
+  }
+  .agendar {
+    display: none;
+  }
+  .img-movil {
+    display: block;
+  }
+  .img-escritorio {
+    display: none;
+  }
+  .nombre,
+  .profesion,
+  .texto_usuario {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  div.icono_testimonio {
+    min-width: 60px;
+    min-height: 60px;
+  }
+  .resenas {
+    width: 80vw;
+  }
+  div.imagen_resena_activa {
+    min-width: 100px;
+    min-height: 100px;
+  }
+  div.contenedor_resenas {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .texto_usuario.resena_activa {
+    width: 70vw;
+    margin: 0 auto;
+  }
+}
