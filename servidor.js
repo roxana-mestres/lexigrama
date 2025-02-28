@@ -23,14 +23,14 @@ const dbConfig =
         user: process.env.DB_USER_PRODUCTION,
         password: process.env.DB_PASSWORD_PRODUCTION,
         database: process.env.DB_NAME_PRODUCTION,
-        port: process.env.PORT_PRODUCTION,
+        port: process.env.DB_PORT_PRODUCTION || 3306,
       }
     : {
         host: process.env.DB_HOST_DEVELOPMENT,
         user: process.env.DB_USER_DEVELOPMENT,
         password: process.env.DB_PASSWORD_DEVELOPMENT,
         database: process.env.DB_NAME_DEVELOPMENT,
-        port: process.env.PORT_DEVELOPMENT,
+        port: process.env.DB_PORT_DEVELOPMENT || 3306,
       };
 
 // Crear la conexión a la base de datos
