@@ -14,7 +14,7 @@ const mysql = require("mysql2");
 const cors = require("cors");
 const path = require("path");
 
-const puerto = process.env.PORT || 3000;
+const puerto = process.env.PORT || 3002;
 
 const dbConfig =
   process.env.NODE_ENV === "produccion"
