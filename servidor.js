@@ -60,7 +60,7 @@ app.use(express.urlencoded({ extended: false }));
 // Middleware para habilitar CORS
 app.use(
   cors({
-    origin: "https://www.lexigrama.com",
+    origin: "https://proyectos-roxana-mestres.xyz",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
   })
@@ -97,7 +97,7 @@ app.post("/contacto", (peticion, respuesta) => {
   });
 });
 
-// Rutas publico
+// Rutas público
 
 // Define rutas GET para tus páginas HTML estáticas
 
