@@ -381,7 +381,7 @@ div.icono_testimonio {
   background-position: center;
 }
 div.icono_testimonio.uno {
-  background-image: url(/lexigrama/lexigrama/img/resena_01.svg);
+  background-image: url(/lexigrama/img/resena_01.svg);
 }
 div.icono_testimonio.dos {
   background-image: url(/lexigrama/img/resena_02.svg);

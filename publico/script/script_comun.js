@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const formularioSuscripcion = document.getElementById(
     "formularioSuscripcion"
   );
-  console.log("Adjuntando evento submit al formulario");
   formularioSuscripcion.addEventListener("submit", function (event) {
     event.preventDefault();
 
