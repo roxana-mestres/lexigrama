@@ -1,5 +1,5 @@
 body {
-  background-image: url(/img/fondo-textura.svg);
+  background-image: url(/lexigrama/img/fondo-textura.svg);
   background-repeat: repeat;
   background-size: 100%;
 }
@@ -36,7 +36,7 @@ div.pestanas {
   transform: scale(0.98);
 }
 .boton-pestanas-activo {
-  background-image: url(/img/highlight-dos.svg);
+  background-image: url(/lexigrama/img/highlight-dos.svg);
   background-repeat: no-repeat;
   width: 90vw;
 }
@@ -59,7 +59,7 @@ h3.calculadora {
   padding-top: 30px;
 }
 .numero {
-  background-image: url(/img/highlight.svg);
+  background-image: url(/lexigrama/img/highlight.svg);
   background-repeat: no-repeat;
   background-position: center;
   font-size: 8em;
@@ -175,7 +175,7 @@ label,
 }
 .caja-checkbox::after {
   content: "";
-  background-image: url(/img/checkmark.svg);
+  background-image: url(/lexigrama/img/checkmark.svg);
   background-size: 100%;
   display: inline-block;
   height: 25px;
@@ -256,7 +256,7 @@ input.number {
 
 /*SECCIÓN NUESTRO PROCESO*/
 h2.highlight {
-  background-image: url(/img/highlight.svg);
+  background-image: url(/lexigrama/img/highlight.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -331,7 +331,7 @@ h2.highlight {
     margin-bottom: 40px;
   }
   h2.highlight {
-    background-image: url(/img/highlight-dos.svg);
+    background-image: url(/lexigrama/img/highlight-dos.svg);
     background-repeat: repeat;
     background-size: cover;
     width: fit-content;

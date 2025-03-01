@@ -1,5 +1,5 @@
 body {
-  background-image: url(/img/fondo-textura.svg);
+  background-image: url(/lexigrama/img/fondo-textura.svg);
   background-repeat: repeat;
   background-size: 100%;
 }
@@ -72,14 +72,14 @@ h2 {
   font-size: 2em;
   font-weight: 600;
   margin-top: 30px;
-  background-image: url(/img/highlight-dos.svg);
+  background-image: url(/lexigrama/img/highlight-dos.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 div.flecha {
   width: 200px;
   height: 200px;
-  background-image: url(/img/flecha.svg);
+  background-image: url(/lexigrama/img/flecha.svg);
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(45deg);

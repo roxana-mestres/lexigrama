@@ -1,6 +1,6 @@
 body {
-  background-image: url(/img/cartulina_amarilla_escritorio.svg),
-    url(/img/fondo-textura.svg);
+  background-image: url(/lexigrama/img/cartulina_amarilla_escritorio.svg),
+    url(/lexigrama/img/fondo-textura.svg);
   background-repeat: no-repeat, repeat;
   background-size: contain, 100%;
   width: 100%;
@@ -100,8 +100,8 @@ button {
     max-width: 300px;
   }
   body {
-    background-image: url(/img/cartulina_amarilla_movil.svg),
-      url(/img/fondo-textura.svg);
+    background-image: url(/lexigrama/img/cartulina_amarilla_movil.svg),
+      url(/lexigrama/img/fondo-textura.svg);
     background-size: 200vh, 100%;
   }
   main {
@@ -112,11 +112,11 @@ button {
 /*SECCIÓN UNO*/
 
 .ilustracion_escritorio.uno {
-  background-image: url(/img/ilustraciones_01.svg);
+  background-image: url(/lexigrama/img/ilustraciones_01.svg);
   height: 50vh;
 }
 .ilustracion_movil.uno {
-  background-image: url(/img/ilustraciones_01_movil.svg);
+  background-image: url(/lexigrama/img/ilustraciones_01_movil.svg);
   height: 30vh;
 }
 div.ilustracion_escritorio,
@@ -146,7 +146,7 @@ h2.titulo {
 .subtitulo {
   font-size: 4em;
   text-transform: lowercase;
-  background-image: url(/img/highlight.svg);
+  background-image: url(/lexigrama/img/highlight.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -189,7 +189,7 @@ div.flecha-texto li {
 div.flecha.imagen {
   width: 200px;
   height: 200px;
-  background-image: url(/img/flecha.svg);
+  background-image: url(/lexigrama/img/flecha.svg);
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -269,15 +269,15 @@ div.botones {
   text-align: center;
 }
 .ilustracion_escritorio.dos {
-  background-image: url(/img/ilustraciones_02.svg);
+  background-image: url(/lexigrama/img/ilustraciones_02.svg);
   height: 40vh;
 }
 .ilustracion_movil.dos {
-  background-image: url(/img/ilustraciones_02_movil.svg);
+  background-image: url(/lexigrama/img/ilustraciones_02_movil.svg);
   height: 30vh;
 }
 .ilustracion_escritorio.exp {
-  background-image: url(/img/imagen_experiencia.png);
+  background-image: url(/lexigrama/img/imagen_experiencia.png);
   height: 50vh;
   width: 100%;
   background-size: cover;
@@ -360,7 +360,7 @@ div.botones {
 div.comillas_resenas {
   width: 70px;
   height: 70px;
-  background-image: url(/img/comillas-img.svg);
+  background-image: url(/lexigrama/img/comillas-img.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
@@ -381,16 +381,16 @@ div.icono_testimonio {
   background-position: center;
 }
 div.icono_testimonio.uno {
-  background-image: url(/img/resena_01.svg);
+  background-image: url(/lexigrama/lexigrama/img/resena_01.svg);
 }
 div.icono_testimonio.dos {
-  background-image: url(/img/resena_02.svg);
+  background-image: url(/lexigrama/img/resena_02.svg);
 }
 div.icono_testimonio.tres {
-  background-image: url(/img/resena_03.svg);
+  background-image: url(/lexigrama/img/resena_03.svg);
 }
 div.icono_testimonio.cuatro {
-  background-image: url(/img/resena_04.svg);
+  background-image: url(/lexigrama/img/resena_04.svg);
 }
 .resena_activa {
   display: block;
