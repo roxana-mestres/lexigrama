@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     console.log("Datos a enviar:", data);
 
-    fetch("https://proyectos-roxana-mestres.xyz/lexigrama/suscribir", {
+    fetch("https://roxana-mestres.com/lexigrama/suscribir", {
       method: "POST",
       headers: {
         "Content-Type": "application/json; charset=utf-8",
