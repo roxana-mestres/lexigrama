@@ -64,7 +64,7 @@ app.use(express.urlencoded({ extended: false }));
 // Middleware para habilitar CORS
 app.use(
   cors({
-    origin: "https://proyectos-roxana-mestres.xyz",
+    origin: "https://roxana-mestres.com",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true,
   })
